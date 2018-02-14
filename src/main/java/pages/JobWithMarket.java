@@ -67,6 +67,7 @@ public class JobWithMarket {
         goToFilterTv.findElement(By.xpath("//*[contains(text(),'Перейти ко всем фильтрам')]")).click();
 
     }
+
     public void checkElements(String rememberElement) {
         assertEquals(rememberElement, new JobWithMarket(BaseSteps.getDriver()).elemName.getAttribute("value"));
 
